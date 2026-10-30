@@ -1,0 +1,5 @@
+{
+  "controller": 1,
+  "serial": "SYNTHETIC-CONTROLLER-1",
+  "disks": [[0, 0, "SYNTHETIC-DISK-A"], [0, 1, "SYNTHETIC-DISK-B"], [0, 2, "SYNTHETIC-DISK-C"], [0, 3, "SYNTHETIC-DISK-D"]]
+}

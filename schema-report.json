@@ -1,0 +1,81 @@
+{
+  "conflicting_controller_counts": false,
+  "invalid_arguments": false,
+  "inventory_valid": false,
+  "kind": "schema",
+  "reported_controller_count": 0,
+  "schema": {
+    "declared_schema": "https://json-schema.org/draft/2020-12/schema",
+    "entities": {
+      "/System": 3,
+      "/System/Array": 70,
+      "/System/Array/Chunk": 20,
+      "/System/Channel": 10,
+      "/System/Channel/HardDrive": 198,
+      "/System/Channel/HardDrive/Chunk": 23,
+      "/System/Channel/HardDrive/SASPhy": 26,
+      "/System/Channel/SES2EnclosureDevice": 34,
+      "/System/Channel/SES2EnclosureDevice/SESElement": 7,
+      "/System/Channel/SES2EnclosureDevice/SESElement/SASPhy": 17,
+      "/System/Channel/TapeDrive": 4,
+      "/System/Controller": 611,
+      "/System/LogicalDrive": 121,
+      "/System/LogicalDrive/Chunk": 19,
+      "/System/SASConnector": 42,
+      "/System/TemperatureSensor": 8
+    },
+    "enum_inconsistencies": [
+      {
+        "described_but_not_listed": [
+          "10",
+          "11",
+          "12",
+          "8",
+          "9"
+        ],
+        "entity": "/System/Channel/HardDrive/SASPhy",
+        "field": "negPhyLinkRate",
+        "listed_but_not_described": [
+          "120",
+          "15",
+          "225",
+          "30",
+          "60"
+        ]
+      },
+      {
+        "described_but_not_listed": [
+          "0x7FFFFFF",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19"
+        ],
+        "entity": "/System/LogicalDrive",
+        "field": "raidLevel",
+        "listed_but_not_described": [
+          "0xFF"
+        ]
+      },
+      {
+        "described_but_not_listed": [],
+        "entity": "/System/LogicalDrive",
+        "field": "stripeSize",
+        "listed_but_not_described": [
+          "32"
+        ]
+      },
+      {
+        "described_but_not_listed": [],
+        "entity": "/System/LogicalDrive",
+        "field": "fullStripeSize",
+        "listed_but_not_described": [
+          "32"
+        ]
+      }
+    ],
+    "live_record_layout_verified": false
+  }
+}

@@ -1,0 +1,33 @@
+Controllers found: 0
+
+Invalid arguments.
+ Usage: GETCONFIGJSON ALL [FILENAME] [nologs]
+ Usage: GETCONFIGJSON <Controller#> [FILENAME] [nologs]
+ Usage: GETCONFIGJSON <Controller#> LOGICALDRIVE <LogicalDrive#> [FILENAME] [nologs]
+ Usage: GETCONFIGJSON <Controller#> DEVICE <Channel# ID#> [FILENAME] [nologs]
+ Usage: GETCONFIGJSON <Controller#> ARRAY <Array#> [FILENAME] [nologs]
+ Usage: GETCONFIGJSON SCHEMA [SCHEMA FILENAME] [nologs]
+ Example: GETCONFIGJSON ALL
+ Example: GETCONFIGJSON 1 
+ Example: GETCONFIGJSON 1 LOGICALDRIVE 0  
+ Example: GETCONFIGJSON 1 DEVICE 2 0  
+ Example: GETCONFIGJSON 1 ARRAY 0  
+ Example: GETCONFIGJSON ALL C:\configuration.json  
+ Example: GETCONFIGJSON ALL /var/log/configuration.json  
+ Example: GETCONFIGJSON SCHEMA 
+ Example: GETCONFIGJSON SCHEMA C:\schema.json  
+ Example: GETCONFIGJSON SCHEMA /var/log/schema.json  
+ ===================================================================================
+
+ Displays current system configuration in json format.
+    ALL            : Displays configuration in json format for all controllers.
+    Controller#    : The controller number for which configuration is needed. 
+    Channel# ID#   : The channel and ID of the physical device.
+    LogicalDrive#  : The logical device for which configuration is needed. 
+    Array#         : The array for which configuration is needed. 
+    SCHEMA         : Schema about a connected controller configuration and its associated devices.
+    FILENAME       : Optional parameter which if specified outputs configuration to json file. 
+                     Filename provided should be accompanied with .json extension. 
+    SCHEMA FILENAME: Optional parameter which if specified outputs schema to json file. 
+                     Filename provided should be accompanied with .json extension. 
+    nologs         : An optional parameter that suppresses log output to the log files.

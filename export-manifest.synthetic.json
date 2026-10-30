@@ -1,0 +1,10 @@
+{
+  "export_id": "SYNTHETIC-EXPORT-001",
+  "drive_serials": ["SYNTHETIC-DISK-A", "SYNTHETIC-DISK-B", "SYNTHETIC-DISK-C", "SYNTHETIC-DISK-D"],
+  "md_uuid": "11111111:22222222:33333333:44444444",
+  "filesystem": "ext4",
+  "filesystem_uuid": "11111111-2222-3333-4444-555555555555",
+  "key_version": "v1",
+  "consistency": "application-quiesced",
+  "layout": "filesystem-on-md"
+}

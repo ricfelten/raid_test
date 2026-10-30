@@ -1,0 +1,10 @@
+{
+  "name": "synthetic-v1-NOT-A-VALIDATED-ARCCONF-SCHEMA",
+  "controllers": "/Controllers",
+  "controller_fields": {"id": "/ControllerID", "serial": "/SerialNumber", "model": "/Model", "status": "/Status"},
+  "physical": "/PhysicalDevices",
+  "physical_fields": {"channel": "/Channel", "id": "/ID", "serial": "/SerialNumber", "status": "/Status"},
+  "logical": "/LogicalDevices",
+  "logical_fields": {"id": "/ID", "raid": "/RAIDLevel", "status": "/Status", "wwn": "/WWN"},
+  "healthy_statuses": {"controller": ["Optimal"], "physical": ["Online"], "logical": ["Optimal"]}
+}

@@ -1,0 +1,24 @@
+[Unit]
+Description=Read-only canister RAID and mirror monitor
+After=local-fs.target
+
+[Service]
+Type=simple
+User=root
+RuntimeDirectory=canister
+RuntimeDirectoryMode=0750
+UMask=0077
+ExecStart=/usr/bin/python3 -m canister --arcconf /usr/sbin/arcconf monitor --adapter /etc/canister/adapter.json --md md0 --output /run/canister/status.json --interval 10
+Restart=on-failure
+RestartSec=10
+TimeoutStopSec=75
+NoNewPrivileges=yes
+ProtectHome=yes
+ProtectSystem=strict
+ReadWritePaths=/run/canister
+PrivateTmp=yes
+# Do not set PrivateDevices=yes: ARCCONF needs controller device nodes.
+# Validate ProtectSystem and driver ioctl access on the target Buildroot image.
+
+[Install]
+WantedBy=multi-user.target
